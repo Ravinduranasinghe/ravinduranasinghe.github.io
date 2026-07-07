@@ -108,6 +108,8 @@
   .dissolve .channel-tag{background:rgba(89,199,181,.15);color:var(--dissolve);}
   .channel-card h3{font-family:'Fraunces',serif;font-size:1.5rem;margin-bottom:.6rem;}
   .channel-card p{color:#C9C6C0;font-size:.9rem;margin-bottom:1.4rem;}
+  .channel-relevance{display:flex;gap:.55rem;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:.6rem;padding:.75rem .9rem;margin-bottom:1.4rem;font-size:.82rem;color:#DAD7D0;}
+  .channel-relevance .tag{flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);white-space:nowrap;margin-top:.15rem;}
   .channel-links{display:flex;gap:.7rem;flex-wrap:wrap;}
   .plink{display:flex;align-items:center;gap:.4rem;font-size:.8rem;padding:.5rem .9rem;border-radius:.5rem;background:rgba(255,255,255,.05);text-decoration:none;border:1px solid var(--line);transition:.2s;}
   .plink:hover{border-color:currentColor;}
@@ -116,12 +118,15 @@
   .plink svg{width:14px;height:14px;fill:currentColor;}
 
   /* PROJECTS */
+  .project-note{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1.5rem;max-width:640px;}
   .project{border:1px solid var(--line);border-radius:1rem;background:var(--surface);padding:2rem;margin-bottom:1.5rem;}
   .project-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem;margin-bottom:.8rem;}
   .project h3{font-family:'Fraunces',serif;font-size:1.3rem;}
   .project-flow{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--ai);}
   .project ul{padding-left:1.1rem;}
   .project li{font-size:.9rem;color:#C9C6C0;margin-bottom:.4rem;}
+  .project-relevance{margin-top:1rem;padding-top:1rem;border-top:1px dashed var(--line);font-size:.85rem;color:var(--ai);}
+  .project-relevance b{color:var(--text);}
 
   /* EXPERIENCE */
   .timeline{position:relative;padding-left:1.6rem;}
@@ -274,12 +279,13 @@
 <section id="channels" class="wrap reveal">
   <div class="section-label">Now streaming</div>
   <div class="section-title">Featured Channels</div>
-  <p class="section-sub">Two audiences, two moods, one production pipeline.</p>
+  <p class="section-sub">Two audiences, two moods, one production pipeline — owned and operated independently, not client accounts, shown here as evidence of end-to-end strategy and execution at scale.</p>
   <div class="channel-grid">
     <div class="channel-card paws">
       <span class="channel-tag">Wildlife Comedy</span>
       <h3>The Planet of Paws</h3>
       <p>Original animated animal characters in static-camera, single-motion-verb sight gags — built for the punchline, not the pan. Locked character and environment prompts keep every scene consistent.</p>
+      <div class="channel-relevance"><span class="tag">Transfers to</span><span>A locked prompt/character system that keeps a brand consistent across dozens of assets — the same discipline behind a brand's house style in any content calendar.</span></div>
       <div class="channel-links">
         <a class="plink" href="https://www.facebook.com/theplanetofpaws/" target="_blank"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12"/></svg>Facebook</a>
         <a class="plink" href="https://www.youtube.com/@ThePlanetofPaws" target="_blank"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.4-.4-5a2.8 2.8 0 0 0-2-2C18.9 4.6 12 4.6 12 4.6s-6.9 0-8.6.4a2.8 2.8 0 0 0-2 2C1 8.6 1 12 1 12s0 3.4.4 5a2.8 2.8 0 0 0 2 2c1.7.4 8.6.4 8.6.4s6.9 0 8.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-5 .4-5M9.8 15.5v-7l6 3.5z"/></svg>YouTube</a>
@@ -289,6 +295,7 @@
       <span class="channel-tag">Meditation & Mindfulness</span>
       <h3>Dissolve.Mind</h3>
       <p>Nature-based meditation content built around deliberate pacing and sparse narration, designed to hold attention through calm rather than cuts.</p>
+      <div class="channel-relevance"><span class="tag">Transfers to</span><span>Pacing and format decisions built specifically to hold attention — the same retention thinking that drives dwell time and saves on a LinkedIn thought-leadership post.</span></div>
       <div class="channel-links">
         <a class="plink" href="https://www.facebook.com/dissolve.mind" target="_blank"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12"/></svg>Facebook</a>
         <a class="plink" href="https://www.youtube.com/@Dissolve.Mind1" target="_blank"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.4-.4-5a2.8 2.8 0 0 0-2-2C18.9 4.6 12 4.6 12 4.6s-6.9 0-8.6.4a2.8 2.8 0 0 0-2 2C1 8.6 1 12 1 12s0 3.4.4 5a2.8 2.8 0 0 0 2 2c1.7.4 8.6.4 8.6.4s6.9 0 8.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-5 .4-5M9.8 15.5v-7l6 3.5z"/></svg>YouTube</a>
@@ -305,6 +312,7 @@
   <div class="section-label">In production</div>
   <div class="section-title">Key Projects</div>
   <p class="section-sub">How each pipeline was built, step by step.</p>
+  <p class="project-note">Note: these are independently owned channels, not agency or client accounts — included as evidence of end-to-end content execution, strategy, and consistency at scale.</p>
   <div class="project">
     <div class="project-head">
       <h3>Planet of Paws — Wildlife Comedy Content</h3>
@@ -314,6 +322,7 @@
       <li>Built a complete AI production pipeline with locked character and environment prompts for visual consistency scene to scene.</li>
       <li>Established a signature comedic style using static-camera shots, single-motion-verb prompts, and sparse narration to preserve key sight gags.</li>
     </ul>
+    <div class="project-relevance"><b>Why it matters elsewhere:</b> repeatable production templates and locked brand rules are exactly what keep a content calendar consistent at scale.</div>
   </div>
   <div class="project">
     <div class="project-head">
@@ -324,6 +333,7 @@
       <li>Produces nature-based meditation content designed around calm pacing and sustained viewer attention.</li>
       <li>Uses deliberate pacing and sparse narration across a dedicated mindfulness and nature channel.</li>
     </ul>
+    <div class="project-relevance"><b>Why it matters elsewhere:</b> pacing built to hold attention is the same instinct behind writing scroll-stopping, dwell-worthy B2B posts.</div>
   </div>
 </section>
 
