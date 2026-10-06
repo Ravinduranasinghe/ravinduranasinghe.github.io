@@ -100,6 +100,18 @@
   .service-card .s-out{font-size:.78rem;color:var(--muted);padding-top:.8rem;border-top:1px dashed var(--line);}
   .service-card .s-out b{color:var(--text);font-weight:500;}
 
+  /* CLIENT WORK */
+  .work-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;}
+  .work-card{border:1px solid var(--line);border-radius:1rem;background:var(--surface);padding:2rem;}
+  .work-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.8rem;}
+  .work-tag{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ai);}
+  .work-status{font-family:'IBM Plex Mono',monospace;font-size:.7rem;background:var(--ink);border:1px solid var(--line);padding:.2rem .7rem;border-radius:1rem;color:var(--muted);}
+  .work-card h3{font-family:'Fraunces',serif;font-size:1.35rem;margin-bottom:1.1rem;}
+  .work-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+  .work-cols h4{font-family:'IBM Plex Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:.5rem;}
+  .work-cols p,.work-cols li{font-size:.88rem;color:#C9C6C0;}
+  .work-cols ul{padding-left:1.1rem;}
+  .work-cols li{margin-bottom:.3rem;}
   /* SKILLS */
   .chip-row{display:flex;flex-wrap:wrap;gap:.6rem;}
   .chip{border:1px solid var(--line);background:var(--surface);padding:.5rem 1rem;border-radius:2rem;font-size:.83rem;color:#DAD7D0;}
@@ -171,7 +183,7 @@
   .divider{height:1px;background:var(--line);}
 
   @media(max-width:760px){
-    .about-grid,.channel-grid{grid-template-columns:1fr;}
+    .about-grid,.channel-grid,.work-cols{grid-template-columns:1fr;}
     nav ul{display:none;}
   }
 </style>
@@ -185,7 +197,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#approach">Approach</a></li>
-      <li><a href="#channels">Case Studies</a></li>
+      <li><a href="#work">Client Work</a></li>
+      <li><a href="#channels">Own Channels</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -334,6 +347,43 @@
     <div class="stack-card">
       <h4>Marketing & Analytics</h4>
       <div class="stack-tools">Meta Business Suite · YouTube Studio<br>TikTok Ads Manager · Google Analytics</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="work" class="wrap reveal">
+  <div class="section-label">Client &amp; employer work</div>
+  <div class="section-title">Professional Projects</div>
+  <p class="section-sub">Live engagements where strategy meets execution.</p>
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="work-meta"><span class="work-tag">In-house · Food &amp; Beverage</span><span class="work-status">Ongoing</span></div>
+      <h3>Social Media Strategy &amp; Content Planning — Ceylon Essence &amp; Beverage Co.</h3>
+      <div class="work-cols">
+        <div><h4>Challenge</h4><p>Give a beverage brand a consistent, purposeful social presence instead of ad-hoc posting.</p></div>
+        <div><h4>Approach</h4><ul><li>Built a monthly content calendar around clear themes and campaign goals.</li><li>Defined formats and messaging for each platform.</li><li>Produced captions, creatives, and AI-assisted visuals and video.</li></ul></div>
+        <div><h4>Delivered</h4><ul><li>Monthly content calendar and strategy</li><li>On-brand posts across the brand's channels</li><li>A repeatable planning and production routine</li></ul></div>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-meta"><span class="work-tag">Freelance · Tourism</span><span class="work-status">Ongoing</span></div>
+      <h3>Digital Marketing &amp; Content Strategy — Avotas Tour</h3>
+      <div class="work-cols">
+        <div><h4>Challenge</h4><p>Build visibility and trust for a tourism brand across professional and consumer platforms.</p></div>
+        <div><h4>Approach</h4><ul><li>Set up a one-month evaluation plan with clear checkpoints.</li><li>Planned LinkedIn, Facebook, and Instagram presence.</li><li>Used AI-generated video to promote the brand.</li></ul></div>
+        <div><h4>Delivered</h4><ul><li>Channel plan and content direction</li><li>LinkedIn, Facebook, and Instagram content</li><li>AI-generated promotional videos</li></ul></div>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-meta"><span class="work-tag">Freelance · Automotive Services</span><span class="work-status">Ongoing</span></div>
+      <h3>Digital Marketing &amp; Content Strategy — Avotas Auto Fleet</h3>
+      <div class="work-cols">
+        <div><h4>Challenge</h4><p>Establish a clear, credible online presence for a rent-a-car business separate from its sister brand.</p></div>
+        <div><h4>Approach</h4><ul><li>Separated brand voice and content plan from the tourism brand.</li><li>Planned platform-specific content for LinkedIn, Facebook, and Instagram.</li><li>Created AI-generated video and social content.</li></ul></div>
+        <div><h4>Delivered</h4><ul><li>Distinct brand content direction</li><li>Social posts and promotional video</li><li>Consistent posting plan</li></ul></div>
+      </div>
     </div>
   </div>
 </section>
